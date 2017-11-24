@@ -383,6 +383,15 @@ module AlmRangers.VsoExtensions {
                         });
                                         
                         var fields = [];
+
+                        var effort = this.getWorkItemField(workItem, "Microsoft.VSTS.Scheduling.Effort");
+                        if (!that.isEmpty(effort)) {
+                            fields.push({
+                                title: this.getFieldName("Microsoft.VSTS.Scheduling.Effort", systemFields),
+                                value: effort
+                            });
+                        }
+
                         var workItemType = this.getWorkItemField(workItem, "System.WorkItemType");
                         var extraFields = this.getCardFields(workItemType, boardSettings);
                         for (var position in extraFields) {
@@ -393,14 +402,6 @@ module AlmRangers.VsoExtensions {
                                     value: this.getWorkItemField(workItem, fieldRef)
                                 });
                             }
-                        }
-
-                        var effort = this.getWorkItemField(workItem, "Microsoft.VSTS.Scheduling.Effort");
-                        if (!that.isEmpty(effort)) {
-                            fields.push({
-                                title: this.getFieldName("Microsoft.VSTS.Scheduling.Effort", systemFields),
-                                value: effort
-                            });
                         }
 
                         var assigned = this.getWorkItemField(workItem, "System.AssignedTo");
