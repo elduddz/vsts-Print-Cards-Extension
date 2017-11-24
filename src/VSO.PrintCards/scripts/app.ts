@@ -124,10 +124,10 @@ module canvasCard {
             var assignedTo = trimText(item.assignedTo, cardSpace - assignedToStart, context);
             context.fillText(assignedTo, cardIndent + padding, nexty);
 
-            var qrCodeSize = 80;
-            var qrCodeLeft = cardSpace - qrCodeSize - 5;
+            var qrCodeSize = 0;
+            //var qrCodeLeft = cardSpace - qrCodeSize - 5;
             var qrCodeTop = maxHeight - qrCodeSize - 5;
-            qrCodeCanvas.generate(item.cardUrl, qrCodeTop, qrCodeLeft, qrCodeSize - 5, canvas);
+            //qrCodeCanvas.generate(item.cardUrl, qrCodeTop, qrCodeLeft, qrCodeSize - 5, canvas);
 
             context.font = "12px Segoe UI Light";
             var keyWidth = 0;
@@ -394,7 +394,15 @@ module AlmRangers.VsoExtensions {
                                 });
                             }
                         }
-                                        
+
+                        var effort = this.getWorkItemField(workItem, "Microsoft.VSTS.Scheduling.Effort");
+                        if (!that.isEmpty(effort)) {
+                            fields.push({
+                                title: this.getFieldName("Microsoft.VSTS.Scheduling.Effort", systemFields),
+                                value: effort
+                            });
+                        }
+
                         var assigned = this.getWorkItemField(workItem, "System.AssignedTo");
                         var id = this.getWorkItemField(workItem, "System.Id");
                         var url = workItem.url.substring(0, workItem.url.indexOf("_apis")) + teamContext.project + "/_workitems/edit/" + id;
