@@ -2,9 +2,9 @@
   "manifestVersion": 1,
   "id": "PrintCards",
   "version": "0.0.0",
-  "name": "Print Cards (deprecated)",
+  "name": "Print Cards - pickup for inhouse use",
   "description": "Print cards from your backlog for use on a physical scrum board.",
-  "publisher": "",
+  "publisher": "elduddz",
   "scopes": [ "vso.work" ],
   "galleryFlags": [ "Public" ],
   "targets": [
