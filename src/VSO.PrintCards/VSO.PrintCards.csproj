@@ -10,13 +10,14 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort>44300</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
     <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -42,7 +43,6 @@
     <Content Include="main.html" />
     <Content Include="screenshots\screenshot1.jpg" />
     <Content Include="screenshots\screenshot2.jpg" />
-    <Content Include="scripts\app.js" />
     <Content Include="images\print-cards-icon.png" />
     <Content Include="index.html" />
     <Content Include="scripts\lib\ai.0.21.5-build00175.min.js" />
@@ -50,7 +50,6 @@
     <Content Include="scripts\main.js" />
     <Content Include="scripts\moment-with-locales.min.js" />
     <Content Include="scripts\qrcode.js" />
-    <Content Include="scripts\TelemetryClient.js" />
     <Content Include="ThirdPartyNotices.txt" />
     <Content Include="web.config" />
   </ItemGroup>
@@ -68,12 +67,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="vss-extension.json" />
-    <Content Include="scripts\app.js.map" />
     <Content Include="LICENCE-TERMS.md" />
     <Content Include="README.md" />
     <Content Include="packages.config" />
     <Content Include="marketplace\mp_terms.md" />
-    <Content Include="scripts\TelemetryClient.js.map" />
     <None Include="Test-vso-print-cards-vsoextensions-almrangers.pubxml" />
   </ItemGroup>
   <PropertyGroup>
