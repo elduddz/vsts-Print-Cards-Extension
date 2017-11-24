@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "PrintCards",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "name": "Print Cards - pickup for inhouse use",
   "description": "Print cards from your backlog for use on a physical scrum board.",
   "publisher": "elduddz",
