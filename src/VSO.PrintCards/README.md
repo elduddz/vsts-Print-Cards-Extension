@@ -1,10 +1,12 @@
-> NOTE - **This extension has been deprecated as this functionality is now part of [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards)**. You can find the latest sample code for Print Cards [here](https://github.com/ALM-Rangers/Print-Cards-Extension).
+> NOTE - **This extension has been reappropriated from [here](https://github.com/ALM-Rangers/Print-Cards-Extension).**  
+> **The vast majority of the words below are mostly from the original creator, we just needed this, because we didnt need all the function of "Agile Cards". I have tried to remove as much reference to the original team, to avoid them getting too much back, but I am not perfect**
 
 ## Plan and track your work with physical cards ##
 
 Print cards from your Kanban board for use during planning exercises with your team, or on a physical scrum board. With the addition of QR codes, you can now easily see more details on your device just by scanning the card.
 
 ![Physical cards](images/image1.png)
+> we've removed the qr code and allowed Effort to be visible as an always on field.
 
 This extension adds a `print` action to your backlog.
 
@@ -40,13 +42,8 @@ When using Edge on a version of Windows 10 before the November 2015 update of Wi
 
 ## Contributors ##
 
-> We thank the following contributor(s) for this extension: Gordon Beeming and Robert MacLean.
+> We would like to thank the original contributor(s) for this extension: Gordon Beeming and Robert MacLean.
 
 ## Feedback
 
-We need your feedback! Here are some ways to connect with us:
-
-- Add a review below.
-- Send us an [email](mailto://mktdevlabs@microsoft.com).
-
-Review the [list of features and resolved issues of latest tools and extensions](https://aka.ms/vsarreleases) for information on the latest releases.
+If you want to use the Q&A section to give us any feedback, that is welcome, but as this is a copy of someone else's that we needed and thought it would be useful for others to have back out there. I cannot guarentee any support of this product, beyond the odd weekend and evening.
