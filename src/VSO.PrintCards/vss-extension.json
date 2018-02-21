@@ -4,7 +4,7 @@
   "version": "0.0.11",
   "name": "Print Cards - pickup from ALM deprecation",
   "description": "Print cards from your backlog for use on a physical scrum board.",
-  "publisher": "elduddz",
+  "publisher": "ukho",
   "scopes": [ "vso.work" ],
   "galleryFlags": [ "Public" ],
   "targets": [
